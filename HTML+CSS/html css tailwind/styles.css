@@ -1,0 +1,40 @@
+.classheader, #h11{
+    color: rgb(43, 226, 202);
+}
+
+.classheader{
+    background-color: #b8b5b5;
+}
+
+#p1{
+    color: brown;
+}
+
+#p1, #ytlink{
+    border: solid;
+}
+
+.classheader h1{
+    border: solid;
+}
+
+/* #id > .class > div/sections */
+
+#h12{
+    background-color: #fdafaf;
+    padding: 2rem;
+    border: 1rem solid #f79999;
+    margin: 2rem;
+    
+}
+
+#tableM{
+    background-color: #b5e0d0;
+    padding: 1rem;
+}
+#tabled{
+    background-color: #a6ddf7;
+}
+#spanB{
+    color: rgb(5, 124, 124);
+}

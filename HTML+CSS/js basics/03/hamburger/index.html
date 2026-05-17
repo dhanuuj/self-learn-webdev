@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger Menu</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    nav{
+      background:black;
+      padding:15px;
+    }
+
+    .menu{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    h2{
+      color:white;
+    }
+
+    .links{
+      display:flex;
+      gap:20px;
+    }
+
+    .links a{
+      color:white;
+      text-decoration:none;
+    }
+
+    .hamburger{
+      display:none;
+      color:white;
+      font-size:28px;
+      cursor:pointer;
+    }
+
+    /* Mobile */
+    @media(max-width:768px){
+
+      .hamburger{
+        display:block;
+      }
+
+      .links{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        margin-top:10px;
+      }
+
+      .links.active{
+        display:flex;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="menu">
+
+      <h2>Logo</h2>
+
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+
+      <div class="links" id="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <script>
+
+    const hamburger = document.getElementById("hamburger");
+    const links = document.getElementById("links");
+
+    hamburger.addEventListener("click", function(){
+      links.classList.toggle("active");
+    });
+
+  </script>
+
+</body>
+</html>

@@ -46,4 +46,5 @@ let direction2 = "South";
 let direction3 = "East";
 let direction4 = "West";
 // let direction5: literalType = "abc"; throws an error :(
+// ///////////////////////////////////////////////////////////
 //# sourceMappingURL=index.js.map

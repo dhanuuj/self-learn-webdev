@@ -4,9 +4,12 @@ import React from 'react'
 const AddToCart = () => {
   return (
     <div>
-        <button onClick={()=>{
+        <button 
+        onClick={()=>{
             alert("Added to Cart!")
-        }}>Add to Cart</button>
+        }}>
+            Add to Cart
+        </button>
     </div>
   )
 }
